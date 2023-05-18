@@ -115,7 +115,7 @@ public class AbstractRewriteRunMojo extends AbstractRewriteMojo {
                     File originalParentDir = originalLocation.toFile().getParentFile();
 
                     assert result.getAfter() != null;
-                    // Ensure directories exist in case something was moved into a hitherto non-existent package
+                    // Ensure directories exist in case something was moved into a hitherto nonexistent package
                     Path afterLocation = results.getProjectRoot().resolve(result.getAfter().getSourcePath());
                     File afterParentDir = afterLocation.toFile().getParentFile();
                     // Rename the directory if its name case has been changed, e.g. camel case to lower case.
